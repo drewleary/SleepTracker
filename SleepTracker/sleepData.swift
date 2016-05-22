@@ -11,9 +11,9 @@ import Foundation
 class SleepData {
     
     static var dates = [String]()
-    static var mood = [String]()
-    static var timeAwake = String?()
-    static var timeAsleep = String?()
+    static var mood = [[String]]()
+    static var timeAwake = [String]()
+    static var timeAsleep = [String]()
 
 
 }

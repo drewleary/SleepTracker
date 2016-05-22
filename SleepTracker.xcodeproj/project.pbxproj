@@ -12,7 +12,6 @@
 		3A02E2741CE92B5B00443FF5 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A02E2731CE92B5B00443FF5 /* HomePageViewController.swift */; };
 		3A02E2781CE93F2200443FF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A02E2771CE93F2200443FF5 /* Main.storyboard */; };
 		3A02E27A1CE942A000443FF5 /* NewEntryTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A02E2791CE942A000443FF5 /* NewEntryTwoViewController.swift */; };
-		3A02E27C1CE957E100443FF5 /* PreviousEntries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A02E27B1CE957E100443FF5 /* PreviousEntries.swift */; };
 		3A02E27E1CEA2C5000443FF5 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A02E27D1CEA2C5000443FF5 /* TableViewCell.swift */; };
 		3A02E2801CEA2D6800443FF5 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A02E27F1CEA2D6800443FF5 /* EntryViewController.swift */; };
 		3A02E2821CEB8AB700443FF5 /* sleepData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A02E2811CEB8AB700443FF5 /* sleepData.swift */; };
@@ -47,7 +46,6 @@
 		3A02E2731CE92B5B00443FF5 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		3A02E2771CE93F2200443FF5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3A02E2791CE942A000443FF5 /* NewEntryTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewEntryTwoViewController.swift; sourceTree = "<group>"; };
-		3A02E27B1CE957E100443FF5 /* PreviousEntries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviousEntries.swift; sourceTree = "<group>"; };
 		3A02E27D1CEA2C5000443FF5 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3A02E27F1CEA2D6800443FF5 /* EntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		3A02E2811CEB8AB700443FF5 /* sleepData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sleepData.swift; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 				3A02E2731CE92B5B00443FF5 /* HomePageViewController.swift */,
 				3A02E26B1CE90A3400443FF5 /* RootTableViewController.swift */,
 				3A02E2811CEB8AB700443FF5 /* sleepData.swift */,
-				3A02E27B1CE957E100443FF5 /* PreviousEntries.swift */,
 				3A02E26F1CE90CAB00443FF5 /* NewEntryViewController.swift */,
 				3A02E2791CE942A000443FF5 /* NewEntryTwoViewController.swift */,
 				3AF1A62D1CBD668700FEE196 /* Assets.xcassets */,
@@ -292,7 +289,6 @@
 				3A02E27A1CE942A000443FF5 /* NewEntryTwoViewController.swift in Sources */,
 				3A02E26C1CE90A3400443FF5 /* RootTableViewController.swift in Sources */,
 				3AF1A6271CBD668700FEE196 /* AppDelegate.swift in Sources */,
-				3A02E27C1CE957E100443FF5 /* PreviousEntries.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,6 +25,10 @@ class RootTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if let entryViewController = navigationController!.storyboard?.instantiateViewControllerWithIdentifier("showEntry") as? EntryViewController {
+            let detailsIndex = tableView.indexPathForSelectedRow?.row
+            entryViewController.sleepDataIndex = detailsIndex!
+        }
         
     }
     
@@ -32,7 +36,7 @@ class RootTableViewController: UITableViewController {
         AnyObject?)
     {
         if (segue.identifier == "showView") {
-            let upcoming: RootTableViewController = segue.destinationViewController as! RootTableViewController
+            let upcoming = segue.destinationViewController as? EntryViewController
             let indexPath = self.tableView.indexPathForSelectedRow!
             let titleString = SleepData.dates[indexPath.row]
             //upcoming.titleStringViaSegue = titleString

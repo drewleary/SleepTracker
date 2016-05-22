@@ -9,6 +9,7 @@
 import UIKit
 
 class NewEntryViewController: UIViewController {
+
     
     var rootTableViewController: RootTableViewController?
 
@@ -19,7 +20,7 @@ class NewEntryViewController: UIViewController {
         dateFormatter.dateFormat = "MM-dd-yyyy HH:mm"
         var strDate = dateFormatter.stringFromDate(timeAsleep.date)
         self.timeChosenAsleep.text = strDate
-        SleepData.timeAsleep = self.timeChosenAsleep.text
+        SleepData.timeAsleep.append(strDate)
     }
     
     @IBOutlet weak var timeAwake: UIDatePicker!
@@ -29,7 +30,7 @@ class NewEntryViewController: UIViewController {
         dateFormatter.dateFormat = "MM-dd-yyyy HH:mm"
         var strDate = dateFormatter.stringFromDate(timeAwake.date)
         self.timeChosenAwake.text = strDate
-        SleepData.timeAsleep = self.timeChosenAwake.text 
+        SleepData.timeAwake.append(strDate)
     }
     
     
