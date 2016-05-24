@@ -92,9 +92,6 @@ class NewEntryTwoViewController: UIViewController {
         SleepData.mood.append(moodData)
     }
     
-    override func viewDidAppear(animated: Bool) {
-        SleepData.mood.append(moodData)
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

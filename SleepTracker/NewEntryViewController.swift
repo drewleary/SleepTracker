@@ -10,32 +10,37 @@ import UIKit
 
 class NewEntryViewController: UIViewController {
 
-    
-    var rootTableViewController: RootTableViewController?
-
     @IBOutlet weak var timeAsleep: UIDatePicker!
-    @IBOutlet weak var timeChosenAsleep: UILabel!
-    @IBAction func timeAsleepAction(sender: AnyObject) {
-        var dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "MM-dd-yyyy HH:mm"
-        var strDate = dateFormatter.stringFromDate(timeAsleep.date)
-        self.timeChosenAsleep.text = strDate
-        SleepData.timeAsleep.append(strDate)
-    }
     
     @IBOutlet weak var timeAwake: UIDatePicker!
-    @IBOutlet weak var timeChosenAwake: UILabel!
-    @IBAction func timeAwakeAction(sender: AnyObject) {
-        var dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "MM-dd-yyyy HH:mm"
-        var strDate = dateFormatter.stringFromDate(timeAwake.date)
-        self.timeChosenAwake.text = strDate
-        SleepData.timeAwake.append(strDate)
+    
+    func timeSlept() {
+        let timeSlept = timeAwake.date.timeIntervalSinceDate(timeAsleep.date)
+        func stringFromTimeInterval(interval: NSTimeInterval) -> String {
+            let interval = Int(interval)
+            let seconds = interval % 60
+            let minutes = (interval / 60) % 6
+            let hours = (interval / 3600)
+            return String(format: "%02d:%02d:%02d", hours, minutes, seconds)
+        }
+        let timeSleptString = stringFromTimeInterval(timeSlept)
+        SleepData.timeSlept.append(timeSleptString)
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "MM-dd-yyyy HH:mm"
+        var strDateAwake = dateFormatter.stringFromDate(timeAwake.date)
+        SleepData.timeAwake.append(strDateAwake)
+        var strDateAsleep = dateFormatter.stringFromDate(timeAsleep.date)
+        SleepData.timeAsleep.append(strDateAsleep)
+        timeSlept()
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        timeSlept()
         // Do any additional setup after loading the view, typically from a nib.
     }
     

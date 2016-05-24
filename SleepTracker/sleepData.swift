@@ -14,6 +14,7 @@ class SleepData {
     static var mood = [[String]]()
     static var timeAwake = [String]()
     static var timeAsleep = [String]()
+    static var timeSlept = [String]()
 
 
 }

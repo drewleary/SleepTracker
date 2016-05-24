@@ -24,23 +24,19 @@ class RootTableViewController: UITableViewController {
         return aCell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if let entryViewController = navigationController!.storyboard?.instantiateViewControllerWithIdentifier("showEntry") as? EntryViewController {
-            let detailsIndex = tableView.indexPathForSelectedRow?.row
-            entryViewController.sleepDataIndex = detailsIndex!
-        }
-        
-    }
+    //override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        //if let entryViewController = navigationController!.storyboard?.instantiateViewControllerWithIdentifier("showEntry") as? EntryViewController {
+           // let detailsIndex = tableView.indexPathForSelectedRow?.row
+            //entryViewController.sleepDataIndex = detailsIndex!
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender:
-        AnyObject?)
-    {
-        if (segue.identifier == "showView") {
+        AnyObject?) {
+        if (segue.identifier == "showEntry") {
             let upcoming = segue.destinationViewController as? EntryViewController
             let indexPath = self.tableView.indexPathForSelectedRow!
-            let titleString = SleepData.dates[indexPath.row]
             //upcoming.titleStringViaSegue = titleString
             self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
+            upcoming?.sleepDataIndex = indexPath.row
         }
     }
     

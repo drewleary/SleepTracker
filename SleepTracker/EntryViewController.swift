@@ -30,8 +30,6 @@ class EntryViewController: UIViewController {
     @IBOutlet weak var nervousLabel: UILabel!
     @IBOutlet weak var upsetLabel: UILabel!
     
-    let dateFormatter = NSDateFormatter()
-    
     
     func mood() {
         if SleepData.mood[sleepDataIndex].contains("Happy") {
@@ -82,18 +80,22 @@ class EntryViewController: UIViewController {
         
     }
     
-    var titleStringViaSegue: String!
+    
+    override func viewWillAppear(animated: Bool) {
+        print(SleepData.timeAwake)
+        print(SleepData.timeAsleep)
+        print(SleepData.mood)
+        mood()
+        timeAwakeLabel.text = SleepData.timeAwake[sleepDataIndex]
+        timeAsleepLabel.text = SleepData.timeAsleep[sleepDataIndex]
+        hoursSleptLabel.text = SleepData.timeSlept[sleepDataIndex]
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.dateLabel.text = self.titleStringViaSegue
-        timeAwakeLabel.text = SleepData.timeAwake[sleepDataIndex]
-        timeAsleepLabel.text = SleepData.timeAsleep[sleepDataIndex]
+    
     }
     
-    override func viewDidAppear(animated: Bool) {
-        mood()
-    }
 }
     
     
