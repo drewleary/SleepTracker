@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GZM-tZ-9ck">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GZM-tZ-9ck">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--Home-->
@@ -77,7 +77,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" id="f9F-Zn-sMZ" customClass="TableViewCell" customModule="SleepTracker" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f9F-Zn-sMZ" id="kbb-T0-Bze">
                                     <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
@@ -128,7 +128,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="r5l-60-ZCX">
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="r5l-60-ZCX">
                                 <rect key="frame" x="140" y="112" width="320" height="173"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="173" id="253-5x-0g9"/>
@@ -137,13 +137,13 @@
                                     <!--2016-05-15 23:49:22 +0000-->
                                 </date>
                             </datePicker>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="k9X-tK-hOH">
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="k9X-tK-hOH">
                                 <rect key="frame" x="140" y="322" width="320" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="485049297.74696702">
                                     <!--2016-05-15 23:54:57 +0000-->
                                 </date>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wake Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnN-9a-O93">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Wake Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnN-9a-O93">
                                 <rect key="frame" x="246" y="293" width="108.5" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="6CG-VG-cAB"/>
@@ -152,7 +152,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sleep Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aR-V2-ENY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sleep Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aR-V2-ENY">
                                 <rect key="frame" x="246" y="83" width="109.5" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="s4D-Ah-Uzb"/>
@@ -204,8 +204,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Other" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgP-hu-qFs">
-                                <rect key="frame" x="152" y="413" width="44" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" text="  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgP-hu-qFs">
+                                <rect key="frame" x="30" y="413" width="281" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -300,25 +300,36 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHh-6M-gGJ">
-                                <rect key="frame" x="165" y="78" width="36" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MM-dd-YYYY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7A5-k7-kPW">
+                                <rect key="frame" x="140" y="76" width="107" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zp3-fD-Goh">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Home" id="kJ5-O6-ZEy">
+                            <connections>
+                                <segue destination="h0o-id-N4X" kind="show" id="dyY-Y4-voc"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
                     <connections>
                         <outlet property="angryLabel" destination="0is-j4-kXs" id="g1k-hw-8s5"/>
                         <outlet property="confusedLabel" destination="6hy-n9-z9s" id="gCg-T0-AB7"/>
-                        <outlet property="dateLabel" destination="WHh-6M-gGJ" id="az0-zY-SOO"/>
+                        <outlet property="dateLabel" destination="7A5-k7-kPW" id="mDb-LA-DNZ"/>
                         <outlet property="emotionalLabel" destination="grR-96-93j" id="kAN-Mm-TCF"/>
                         <outlet property="excitedLabel" destination="7G5-te-XUf" id="xkx-lN-EMo"/>
                         <outlet property="frustratedLabel" destination="J4n-sX-Xth" id="aKu-dR-xNm"/>
                         <outlet property="happyLabel" destination="3v6-2k-std" id="NAo-F6-Esz"/>
                         <outlet property="hoursSleptLabel" destination="xWe-6k-Bdg" id="sTR-0L-bo2"/>
                         <outlet property="nervousLabel" destination="ENs-Kr-Vfd" id="7td-bj-USX"/>
+                        <outlet property="otherLabel" destination="vgP-hu-qFs" id="ZgG-OB-BcR"/>
                         <outlet property="sadLabel" destination="dzo-KJ-208" id="SMa-4J-TZC"/>
                         <outlet property="timeAsleepLabel" destination="Oc4-wL-Sw7" id="ED1-wc-Q2J"/>
                         <outlet property="timeAwakeLabel" destination="9RJ-MX-qNc" id="pO3-IG-M6S"/>
@@ -327,7 +338,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M1f-vQ-ebi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2337" y="-330"/>
+            <point key="canvasLocation" x="2412" y="-378"/>
         </scene>
         <!--New Entry Two View Controller-->
         <scene sceneID="czO-X4-Zij">
@@ -342,13 +353,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="How are you feeling? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edg-7b-cqo">
-                                <rect key="frame" x="62" y="97" width="283" height="64"/>
+                                <rect key="frame" x="62" y="74" width="283" height="64"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avk-1E-TE1">
-                                <rect key="frame" x="124" y="258" width="81" height="34"/>
+                                <rect key="frame" x="124" y="235" width="81" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Confused"/>
                                 <connections>
@@ -356,7 +367,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SeW-75-AGW">
-                                <rect key="frame" x="243" y="190" width="55" height="47"/>
+                                <rect key="frame" x="243" y="167" width="55" height="47"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Angry"/>
                                 <connections>
@@ -364,7 +375,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lji-QT-Ter">
-                                <rect key="frame" x="15" y="319" width="84" height="30.5"/>
+                                <rect key="frame" x="15" y="296" width="84" height="30.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Frustrated"/>
                                 <connections>
@@ -372,7 +383,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f93-3G-wBp">
-                                <rect key="frame" x="26" y="257" width="61" height="35"/>
+                                <rect key="frame" x="26" y="234" width="61" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Excited"/>
                                 <connections>
@@ -380,7 +391,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OyT-5N-JL5">
-                                <rect key="frame" x="142" y="197" width="44" height="32.5"/>
+                                <rect key="frame" x="142" y="174" width="44" height="32.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Sad"/>
                                 <connections>
@@ -388,7 +399,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmK-uG-Zas">
-                                <rect key="frame" x="239" y="319" width="63" height="30"/>
+                                <rect key="frame" x="239" y="296" width="63" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Upset"/>
                                 <connections>
@@ -396,7 +407,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jan-Zr-pwk">
-                                <rect key="frame" x="124" y="318" width="80" height="32"/>
+                                <rect key="frame" x="124" y="295" width="80" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Nervous"/>
                                 <connections>
@@ -404,7 +415,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQV-8h-pfY">
-                                <rect key="frame" x="227" y="258" width="87" height="33.5"/>
+                                <rect key="frame" x="227" y="235" width="87" height="33.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Emotional"/>
                                 <connections>
@@ -412,13 +423,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Other:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6td-Tc-5b1">
-                                <rect key="frame" x="35" y="370" width="49" height="21"/>
+                                <rect key="frame" x="35" y="347" width="49" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qZs-QN-sMM">
-                                <rect key="frame" x="127" y="370" width="97" height="30"/>
+                                <rect key="frame" x="127" y="347" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -426,14 +437,14 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehz-tE-1pQ">
-                                <rect key="frame" x="256" y="369" width="37" height="30"/>
+                                <rect key="frame" x="256" y="346" width="37" height="30"/>
                                 <state key="normal" title="Enter"/>
                                 <connections>
                                     <action selector="addCustomMood:" destination="Ss8-Yi-pO8" eventType="touchUpInside" id="oaf-qK-PcY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKO-43-yFg">
-                                <rect key="frame" x="157" y="408" width="37" height="30"/>
+                                <rect key="frame" x="157" y="385" width="37" height="30"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
                                     <action selector="doneButtonPressed:" destination="Ss8-Yi-pO8" eventType="touchUpInside" id="6dX-T9-e0J"/>
@@ -441,7 +452,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xwi-YC-xXt">
-                                <rect key="frame" x="30" y="197" width="53" height="32"/>
+                                <rect key="frame" x="30" y="174" width="53" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Happy"/>
                                 <connections>
@@ -465,7 +476,6 @@
                         <outlet property="frustrated" destination="Lji-QT-Ter" id="Hb7-ux-gwi"/>
                         <outlet property="happy" destination="Xwi-YC-xXt" id="pLX-UA-7SB"/>
                         <outlet property="nervous" destination="jan-Zr-pwk" id="IHO-dw-53k"/>
-                        <outlet property="otherTextField" destination="qZs-QN-sMM" id="IcB-p3-BDX"/>
                         <outlet property="sad" destination="OyT-5N-JL5" id="Eyv-BW-Tph"/>
                         <outlet property="upset" destination="cmK-uG-Zas" id="jxv-gS-s1h"/>
                     </connections>
@@ -497,7 +507,8 @@
         <image name="Image" width="3431" height="3845"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3QR-Wy-yn3"/>
-        <segue reference="ldK-cV-OUx"/>
+        <segue reference="2A9-co-7q7"/>
+        <segue reference="dyY-Y4-voc"/>
+        <segue reference="QgO-rG-EwX"/>
     </inferredMetricsTieBreakers>
 </document>

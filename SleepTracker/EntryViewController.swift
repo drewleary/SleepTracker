@@ -12,6 +12,8 @@ class EntryViewController: UIViewController {
 
     var sleepDataIndex = -1
     
+    var allMoods = ["Happy", "Sad", "Angry", "Excited", "Confused", "Emotional", "Frustrated", "Nervous", "Upset"]
+    
     @IBOutlet weak var dateLabel: UILabel!
     
     @IBOutlet weak var timeAwakeLabel: UILabel!
@@ -29,6 +31,7 @@ class EntryViewController: UIViewController {
     @IBOutlet weak var frustratedLabel: UILabel!
     @IBOutlet weak var nervousLabel: UILabel!
     @IBOutlet weak var upsetLabel: UILabel!
+    @IBOutlet weak var otherLabel: UILabel!
     
     
     func mood() {
@@ -77,10 +80,21 @@ class EntryViewController: UIViewController {
         } else {
             upsetLabel.text = ""
         }
-        
+        var customIndex = 0
+        func otherMood() {
+            while customIndex <= SleepData.mood.count {
+                if allMoods.contains(SleepData.mood[sleepDataIndex][customIndex]) != true {
+                    otherLabel.text = otherLabel.text! + SleepData.mood[sleepDataIndex][customIndex] + ", "
+                    customIndex = customIndex + 1
+                    otherMood()
+            } else {
+                otherLabel.text = ""
+                }
+            }
+        }
+        otherMood()
     }
-    
-    
+
     override func viewWillAppear(animated: Bool) {
         print(SleepData.timeAwake)
         print(SleepData.timeAsleep)
@@ -89,14 +103,12 @@ class EntryViewController: UIViewController {
         timeAwakeLabel.text = SleepData.timeAwake[sleepDataIndex]
         timeAsleepLabel.text = SleepData.timeAsleep[sleepDataIndex]
         hoursSleptLabel.text = SleepData.timeSlept[sleepDataIndex]
+        dateLabel.text = SleepData.dates[sleepDataIndex]
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    
-    }
-    
 }
     
     
+
+
+
 

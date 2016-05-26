@@ -40,7 +40,6 @@ class NewEntryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        timeSlept()
         // Do any additional setup after loading the view, typically from a nib.
     }
     

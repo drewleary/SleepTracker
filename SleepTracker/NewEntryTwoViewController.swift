@@ -21,7 +21,6 @@ class NewEntryTwoViewController: UIViewController {
     @IBOutlet weak var frustrated: UIButton!
     @IBOutlet weak var nervous: UIButton!
     @IBOutlet weak var upset: UIButton!
-    @IBOutlet weak var otherTextField: UITextField!
     
     @IBAction func confusedButton(sender: UIButton) {
         confused.setTitleColor(UIColor.redColor(), forState: UIControlState.Normal)
@@ -80,7 +79,7 @@ class NewEntryTwoViewController: UIViewController {
     @IBOutlet weak var customMood: UITextField!
     
     @IBAction func addCustomMood(sender: UIButton) {
-        moodData.insert("\(customMood.text)", atIndex: 0)
+        moodData.insert(customMood.text!, atIndex: 0)
         customMood.text = ""
     }
     @IBAction func doneButtonPressed(sender: UIButton) {
@@ -90,6 +89,10 @@ class NewEntryTwoViewController: UIViewController {
         var strDate = dateFormatter.stringFromDate(todaysDate)
         SleepData.dates.append(strDate)
         SleepData.mood.append(moodData)
+        if self.customMood.text?.isEmpty != true {
+            moodData.insert(self.customMood.text!, atIndex: 0)
+        }
+
     }
     
     
